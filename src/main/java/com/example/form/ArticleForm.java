@@ -1,4 +1,4 @@
-package com.example;
+package com.example.form;
 
 public class ArticleForm {
 	/**投稿者名*/
