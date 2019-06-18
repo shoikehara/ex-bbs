@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
@@ -12,6 +13,8 @@ import com.example.form.ArticleForm;
 import com.example.form.CommentForm;
 import com.example.service.ArticleService;
 
+@Controller
+@RequestMapping("/bulletin-board")
 public class InsertArticleController {
 	@Autowired
 	private ArticleService articleService;
